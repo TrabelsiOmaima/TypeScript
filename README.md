@@ -31,7 +31,18 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
 
 
 
-3. 
+3. Type Basics : 
+                - typescript use STRICT TYPES 
+                - the type is implicit (auto terminal) switch the variable value
+                        let age = 30;
+                - you can't change the type of variable already declared
+                        //age =  'yoshi';  /Type 'string' is not assignable to type 'number'
+
+                - but you can change it value 
+                - you must mention the type of methods arguments :
+                        const circ = (diameter : number) => {
+                        }
+
 
 
 

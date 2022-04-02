@@ -1,14 +1,17 @@
 
-const character = 'luigi';
+let character = 'mario';
+let age = 30;
+let isBlackBelt = false;
 
-console.log(character);
+//character = 20; / EType 'number' is not assignable to type 'string'.
+character= 'luigi';
 
-const inputs = document.querySelectorAll('input') ;
+//age =  'yoshi';  /Type 'string' is not assignable to type 'number'
+age= 40;
 
-console.log(inputs);
+const circ = (diameter : number) => {
+    return diameter * Math.PI;
+}
 
-//or 
-
-inputs.forEach(input => {
-    console.log(input); 
-})
+//console.log(circ('bh')); // Error : Argument of type 'string' is not assignable to parameter of type 'number'
+console.log(circ(7.5));
