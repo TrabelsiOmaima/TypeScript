@@ -168,3 +168,10 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
         - typeScript OO
         - clasess .. propertys.. constructer... methodes..
 
+
+13. public,private,readonly : typescript modifiers
+        - all propreties are public par defualt => prblm
+        - change it : in the constrctor
+                readonly client: string, 
+                private details: string, 
+                public amount: number,
