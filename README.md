@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
 2. git checkout  new_branch_name : cd new_branch_name
 3. git add . : add all new changes/files to the new branch
 4. git commit -m "commit msg"
-5. git push
+5. git push origin HEAD
 
 
 
@@ -65,6 +65,21 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                                 - you can't add new property 
 
 
+
+5. Explicit types :
+        - when you don't know the value , you declare the variable with explicit type :
+                - string , number , boolean :
+                        (let x : string) : simple type = string
+                        ( let uid: string|number; ) = union types
+                - arrays : 
+                        (let ninjas: string[] = [];) : tab of strings ( ps : if u don't put [], u can't use .push() )
+                        ( let mixed: (string|number|boolean)[] = [];) : mixed tab  : union types
+                - object :
+                        let ninjaTwo: {
+                        name: string,
+                        age: number,
+                        beltColour: string
+                        };
 
 
 
