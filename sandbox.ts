@@ -1,41 +1,26 @@
 
 
-// ------------ simple types : string , number , boolean :
-      let character: string = 'mario';
-      let age: number;
-      let isLoggedIn: boolean;
+let age: any = 25;
 
-      // age = 'luigi';
-      age = 30;
+age = true;
+console.log(age);
+age = 'hello';
+console.log(age);
+age = { name: 'luigi' };
+console.log(age);
 
-      // isLoggedIn = 25;
-      isLoggedIn = true;
+let mixed: any[] = [];
 
+mixed.push(5);
+mixed.push('mario');
+mixed.push(false);
+console.log(mixed);
 
-// ------------ arrays
-    let ninjas: string[] = [];
+let ninja: { name: any, age: any };
 
-    ninjas.push('ryu');
-    ninjas.push('chun-li');
-    console.log(ninjas);
+ninja = { name: 'yoshi', age: 25 };
+console.log(ninja);
 
-// -------------union types 
-// mixed array
-    let mixed: (string|number|boolean)[] = [];
-    mixed.push('hello');
-    mixed.push(false);
-    mixed.push(20);
-    console.log(mixed);
-// mixed variable type
-    let uid: string|number;
+ninja = { name: 25, age: 'yoshi' };
+console.log(ninja);
 
-// ---------------- objects
-let ninjaOne: object;
-ninjaOne = { name: 'yoshi', age: 30 };
-
-let ninjaTwo: {
-  name: string,
-  age: number,
-  beltColour: string
-};
-ninjaTwo = { name: 'ken', age: 20, beltColour: 'black' };

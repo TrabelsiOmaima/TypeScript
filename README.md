@@ -82,4 +82,8 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                         };
 
 
+6. Dynamic "any" type : 
+        + declare variable|array|objects , with the keyword "any" :
+                - it can be any type
+                - u can change it type any time, without get an error 
 
