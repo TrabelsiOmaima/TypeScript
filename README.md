@@ -87,3 +87,25 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                 - it can be any type
                 - u can change it type any time, without get an error 
 
+
+
+7. tsconfig.json ( better workflow tsconfig ):
+        - structure d'un projet : 
+                + public >            / need to compile
+                        file.html
+                        file.js
+                        file.css
+                + src >              / don't need to compile
+                        file.ts
+                => prblm = ( tsc src/file.ts ) auto generation of file.js in src folder 
+                => slt : tsc --init 
+                        auto genere of "tsconfig.json"  = javaSCript compilation file details :
+
+        - tsconfig.json :
+                "target": "es2016",  ~js version
+                "rootDir": "./src",   each file.ts from src folder , compile in :   "outDir": "./public",  public folder   
+                => now : just execute :
+                tsc or tsc -w (in main folder = typeScript), and all files.ts (/src) are compiled in /public files.js
+                Prblm : any file.ts (from any folder , it auto compile )
+                => slt : add : ( "include": ["src"])  : to only compile file.ts exist in src folder
+
