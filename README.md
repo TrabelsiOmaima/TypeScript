@@ -147,3 +147,22 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                 logDetails = (ninja: {name: string, age: number}) => {
                 console.log(`${ninja.name} is ${ninja.age} years old`);
                 }
+
+
+11. DOM type casting : ------------- we start coding our application
+- like javaScript ,typeScript can use the anchor + you can acces to it proprtitys ..etc
+-  u can't accecs directly to a proprety of an html elemnnt:   console.log(anchor.href) //error (cuz we don't sure that will return a result)
+=> slt :
+        a.  anchor = document.querySelector('a')! / "!" : devlopper said look i know this exise
+        b. test :  if(anchor) {console.log(anchor.href); }
+        c. case of classe of html elemnt (.new-item-form) not an html elemnt(form) 
+                we can't used methodes and property of elemnt so we cast it with "as" :
+                 const form = document.querySelector('.new-item-form') as HTMLFormElement;
+                console.log(form.children);
+        with id :
+         const details = document.querySelector('#details') as HTMLInputElement;
+
+
+
+
+
