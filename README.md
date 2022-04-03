@@ -7,7 +7,8 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
 1. git branch -c new_branch_name : create new branche
 2. git checkout  new_branch_name : cd new_branch_name
 3. git add . : add all new changes/files to the new branch
-4. git commit 
+4. git commit -m "commit msg"
+5. git push
 
 
 
