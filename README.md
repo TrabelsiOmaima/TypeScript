@@ -175,3 +175,20 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                 readonly client: string, 
                 private details: string, 
                 public amount: number,
+
+
+14. Modules : management of project , structer folders
+        - tsconfig.json :
+                "target": "es6",                          
+                "module": "es2015",    
+        - index.html :
+                <script type="module" src='app.js'></script>
+
+        src > 
+                app.ts (import { Invoice } from './classes/Invoice.js';
+        )
+                classes > 
+                        classeifile.ts (export class Invoice {})
+                        ...
+
+
