@@ -126,3 +126,14 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                                 console.log(c);
                         }
 
+
+9. type Aliases :
+        - definir un type personnalisé selon le besoin 
+        - expl : 
+                type StringOrNumber = string | number;
+                type objWithName = { name: string, uid: StringOrNumber} ;
+
+                const logDetails = (uid : StringOrNumber, item: string) => {
+                console.log(`${item} has a uid of ${uid}`);
+                }
+
