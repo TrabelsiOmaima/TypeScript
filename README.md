@@ -137,3 +137,13 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                 console.log(`${item} has a uid of ${uid}`);
                 }
 
+
+10. functions signatures :
+        - when we declare a variable type function with the type of arguments and the return type :
+        => we should strictly respect this structure (numbers and types, arguments and return)
+        example :
+                let logDetails: (obj: {name: string, age: number}) => void;
+
+                logDetails = (ninja: {name: string, age: number}) => {
+                console.log(`${ninja.name} is ${ninja.age} years old`);
+                }
