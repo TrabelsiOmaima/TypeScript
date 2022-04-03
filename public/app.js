@@ -1,21 +1,32 @@
 "use strict";
-const anchor = document.querySelector('a');
-if (anchor) {
-    console.log(anchor.href);
+// -------classes
+class Invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    format() {
+        return `${this.client} owes £${this.amount} for ${this.details}`;
+    }
 }
-console.log(anchor.href);
-//const form = document.querySelector('form')!;
+//-------- create new classe, instantiation
+const invOne = new Invoice('mario', 'work on the mario website', 250);
+const invTwo = new Invoice('luigi', 'work on the luigi website', 300);
+// tab of classes 
+let invoices = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+// invoices.push({ name: 'shaun' });
+console.log(invoices);
 const form = document.querySelector('.new-item-form');
 console.log(form.children);
-// ----------------------- inputs  
+// inputs
 const type = document.querySelector('#type');
 const tofrom = document.querySelector('#tofrom');
 const details = document.querySelector('#details');
 const amount = document.querySelector('#amount');
-//---- event 
 form.addEventListener('submit', (e) => {
-    e.preventDefault(); //auto refreche page 
-    console.log(//recupere values input par user
-    type.value, tofrom.value, details.value, amount.valueAsNumber // recupere values input par user + cast to number
-    );
+    e.preventDefault();
+    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
