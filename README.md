@@ -109,3 +109,20 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                 Prblm : any file.ts (from any folder , it auto compile )
                 => slt : add : ( "include": ["src"])  : to only compile file.ts exist in src folder
 
+
+8. Function basics :
+        - basically, we will work with arrow functions
+        - "Function" is like other types (string, number, array, object,...) => strict type
+        - for functions arguments type :
+                - strict type, we can use also union type
+                - you should respect the number, the types of arguments
+                - if u have optional argument or argument has default value, you must put it in the end
+                - c is optional (c?: number ) 
+                - default value = 10 (c: number = 10)
+                - return type(number , void,..) implicit or explicit , but in general  is auto 
+                - if an argument has default value , u can ignore ? Optional mark
+                        const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
+                                console.log(a + b);
+                                console.log(c);
+                        }
+
