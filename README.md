@@ -16,6 +16,8 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
         PS : browser don't capable to read TypeScript code, so for this it changes to regular JavaScript , and principal it used cuz it easier than JavaScript for the developers ( OO, strict types, classes...etc)
 
 
+
+
 2. compiling typescript into JavaScript :
                 -install package "live server" to open files HTML directly like a browser
                 - index.html link to sandbox.js not to sandbox.ts because browser don't read typescript 
@@ -44,6 +46,15 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                         }
 
 
+
+4. objects Arrays :
+                + arrays :
+                        - if you declare it only as (numbers or string or boolean) , so u can't add other type
+                        - but if you declare it as multi types , you can add, change, (but only the types of start)
+                + objects :
+                        - when you define an object , you should :
+                                - strictement respect it structer (propertys : names + types )
+                                - you can't add new property 
 
 
 
