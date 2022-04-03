@@ -167,6 +167,7 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
 12. Classes :
         - typeScript OO
         - clasess .. propertys.. constructer... methodes..
+        - instance : - we should respect params (prop and methodes) (number, type)
 
 
 13. public,private,readonly : typescript modifiers
@@ -192,3 +193,25 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                         ...
 
 
+15. interfaces
+        - we don't have interfaces in javascript
+        - like a classe , interface has propretys band methods
+        - we dont instancier an interface => no construnctor
+        - we should respect params (prop and methodes) (number, type)
+        - un interface impliment by n classes
+
+
+16. interfaces with classes :
+- if a classe impliment an interface, each objects of thsi classe should :
+        impliment this interface and it structure.
+
+        app.ts>
+        import { HasFormatter } from './interfaces/HasFormatter.js';
+
+        let doc: HasFormatter;
+        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+
+        interfaces > HasFormatter.ts
+        export interface HasFormatter {
+        format(): string;
+        }
