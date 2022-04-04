@@ -147,7 +147,7 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                 logDetails = (ninja: {name: string, age: number}) => {
                 console.log(`${ninja.name} is ${ninja.age} years old`);
                 }
-
+//---------------------------------------------------- a verifier plustard
 
 11. DOM type casting : ------------- we start coding our application
 - like javaScript ,typeScript can use the anchor + you can acces to it proprtitys ..etc
@@ -202,16 +202,26 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
 
 
 16. interfaces with classes :
-- if a classe impliment an interface, each objects of thsi classe should :
-        impliment this interface and it structure.
+        - if a classe impliment an interface, each objects of thsi classe should :
+                impliment this interface and rabsolutly respect it structure.
 
-        app.ts>
-        import { HasFormatter } from './interfaces/HasFormatter.js';
+                app.ts>
+                import { HasFormatter } from './interfaces/HasFormatter.js';
 
-        let doc: HasFormatter;
-        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+                let doc: HasFormatter;
+                doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
 
-        interfaces > HasFormatter.ts
-        export interface HasFormatter {
-        format(): string;
-        }
+                interfaces > HasFormatter.ts >
+                export interface HasFormatter {
+                format(): string;
+                }
+
+
+17. creating a renderListeItem class :
+- render list of adding items
+app.ts
++ListTemplate.ts
+
+
+
+18. 
