@@ -202,6 +202,7 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
 
 
 16. interfaces with classes :
+an interface defines how an object should look
         - if a classe impliment an interface, each objects of thsi classe should :
                 impliment this interface and rabsolutly respect it structure.
 
@@ -224,4 +225,14 @@ app.ts
 
 
 
-18. 
+18.  GENERICS
+        - typescript feutures 
+        - Generics : create reusible blocs of code (#types) 
+        - <T>  
+        - exmple :
+                interface Resource<T> {
+                uid: number;
+                resourceName: string;
+                data: T;
+                }
+
