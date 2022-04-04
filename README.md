@@ -242,7 +242,7 @@ app.ts
         - specific type :
         - exemple :
                 enum ResourceType { BOOK, AUTHOR, FILM, DIRECTOR };
-                
+
                 const docOne: Resource<object> = {
                 uid: 1,
                 resourceType: ResourceType.BOOK,
@@ -253,3 +253,16 @@ app.ts
                 resourceType: ResourceType.DIRECTOR,
                 data: { title: 'name of the wind' }
                 }
+
+
+20. Tuples
+        - specific type 
+        - like an array but when we declare it , we should define it structure ( number and type )
+        - we should strictement respect this structure when we use it
+        - exemple :
+                nrml tab : 
+                        let arr = ['ryu', 25, true];
+                        arr = [30, false, 'yoshi'];
+                tuple :
+                        let tup: [string, number, boolean] = ['ryu', 25, true];
+
