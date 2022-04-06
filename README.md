@@ -147,38 +147,42 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                 logDetails = (ninja: {name: string, age: number}) => {
                 console.log(`${ninja.name} is ${ninja.age} years old`);
                 }
-//---------------------------------------------------- a verifier plustard
 
 11. DOM type casting : ------------- we start coding our application
-- like javaScript ,typeScript can use the anchor + you can acces to it proprtitys ..etc
--  u can't accecs directly to a proprety of an html elemnnt:   console.log(anchor.href) //error (cuz we don't sure that will return a result)
-=> slt :
-        a.  anchor = document.querySelector('a')! / "!" : devlopper said look i know this exise
-        b. test :  if(anchor) {console.log(anchor.href); }
-        c. case of classe of html elemnt (.new-item-form) not an html elemnt(form) 
-                we can't used methodes and property of elemnt so we cast it with "as" :
-                 const form = document.querySelector('.new-item-form') as HTMLFormElement;
-                console.log(form.children);
-        with id :
-         const details = document.querySelector('#details') as HTMLInputElement;
+        - like JavaScript ,typescript can use the anchor + you can access to it properties ..etc
+        -  u can't access directly to a property of an HTML element:   console.log(anchor.href) //error (cuz we don't sure that will return a result)
+        => slt :
+                a.  anchor = document.querySelector('a')! / "!" : developer said look I know this exist
+                b. test :  if(anchor) {console.log(anchor.href); }
+                c. case of class of HTML element (.new-item-form) not an HTML element(form) 
+                        we can't use methods and property of element, so we cast it with "as" :
+                        const form = document.querySelector('.new-item-form') as HTMLFormElement;
+                        console.log(form.children);
+                with id :
+                const details = document.querySelector('#details') as HTMLInputElement;
+
+
 
 
 
 12. Classes :
-        - typeScript OO
-        - clasess .. propertys.. constructer... methodes..
-        - instance : - we should respect params (prop and methodes) (number, type)
+        - typescript OO
+        - classes .. Properties.. Constructor... methods..
+        - instance : - we should respect parameters (prop and methods) (number, type)
 
 
-13. public,private,readonly : typescript modifiers
-        - all propreties are public par defualt => prblm
-        - change it : in the constrctor
+
+
+13. public, private, readonly : typescript modifiers
+        - all properties are public par default → problem !
+        - change them : in the constructor
                 readonly client: string, 
                 private details: string, 
                 public amount: number,
 
 
-14. Modules : management of project , structer folders
+
+14. Modules : management of project ( folders structure)
         - tsconfig.json :
                 "target": "es6",                          
                 "module": "es2015",    
@@ -193,18 +197,23 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
                         ...
 
 
+
+
+
 15. interfaces
-        - we don't have interfaces in javascript
-        - like a classe , interface has propretys band methods
-        - we dont instancier an interface => no construnctor
-        - we should respect params (prop and methodes) (number, type)
-        - un interface impliment by n classes
+        - we don't have interfaces in JavaScript
+        - like a class , interface has properties band methods
+        - we don't instance an interface → no constructor
+        - we should respect parameters (prop and methods) (number, type)
+        - un interface implement by a class
+
+
 
 
 16. interfaces with classes :
-an interface defines how an object should look
-        - if a classe impliment an interface, each objects of thsi classe should :
-                impliment this interface and rabsolutly respect it structure.
+        - an interface defines how an object should look
+        - if a class implement an interface, each objects of this class should :
+                Implement this interface and absolutely respect it structure.
 
                 app.ts>
                 import { HasFormatter } from './interfaces/HasFormatter.js';
@@ -218,18 +227,20 @@ an interface defines how an object should look
                 }
 
 
+
+
 17. creating a renderListeItem class :
-- render list of adding items
-app.ts
-+ListTemplate.ts
+        - render list of adding items
+        app.ts>
+        ListTemplate.ts>
 
 
 
 18.  GENERICS
-        - typescript feutures 
-        - Generics : create reusible blocs of code (#types) 
+        - typescript features 
+        - Generics : create reusing blocs of code (#types) 
         - <T>  
-        - exmple :
+        - example :
                 interface Resource<T> {
                 uid: number;
                 resourceName: string;
@@ -238,9 +249,10 @@ app.ts
 
 
 
+
 19. Enums
         - specific type :
-        - exemple :
+        - example :
                 enum ResourceType { BOOK, AUTHOR, FILM, DIRECTOR };
 
                 const docOne: Resource<object> = {
@@ -255,14 +267,22 @@ app.ts
                 }
 
 
+
 20. Tuples
         - specific type 
         - like an array but when we declare it , we should define it structure ( number and type )
-        - we should strictement respect this structure when we use it
-        - exemple :
+        - we should strictly respect this structure when we use it
+        - example :
                 nrml tab : 
                         let arr = ['ryu', 25, true];
                         arr = [30, false, 'yoshi'];
                 tuple :
                         let tup: [string, number, boolean] = ['ryu', 25, true];
+
+
+
+
+21. typeScript documentation :
+        https://www.typescriptlang.org/docs/
+
 
