@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=2pZmKW9-I_k&list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwK
 
 
 
-
+ 
 2. compiling typescript into JavaScript :
                 -install package "live server" to open files HTML directly like a browser
                 - index.html link to sandbox.js not to sandbox.ts because browser don't read typescript 
